@@ -9,7 +9,7 @@ RoadMap.dvi: RoadMap.aux VSS.bib
 	latex --shell-escape RoadMap.tex
 	latex --shell-escape RoadMap.tex
 
-RoadMap.aux:  RoadMap.tex Introduction.tex	
+RoadMap.aux: RoadMap.tex Introduction.tex Modularity.tex Analysis.tex	
 	latex --shell-escape RoadMap.tex
 
 clean:
