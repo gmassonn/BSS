@@ -1,0 +1,109 @@
+\section{Introduction}
+\textcolor{red}{This is a copy of the introduction of the draft sent to the quanticol project. TO BE MODIFIED.}
+
+\subsection{Motivation and description of the system}
+In recent years, bicycle sharing systems (BSS) have proven to be very
+successful in several major cities and are now spreading all accross
+the world.  Nowadays, there exist more than 700 such systems that
+operate on five continents The goal for the cities are multiples: From
+a greener image due to more eco-friendly means of transportation to
+the reduction of traffic congestion, noise and air pollution, they
+provide an alternative to private motorised vehicule, especially for
+short-distance trips.  From the user's perspective, they offer an
+affordable and efficient mean of transportation with several benefits
+over the use of a personal bicycle regarding maintenance, theft or
+storage issues.
+
+A bike-sharing network is composed of stations where a limited number
+of bikes can be parked.  The dynamics are simple: Each user can arrive
+at a station to pick up a bike and can travel with it to another
+station.  If the station at the origin is empty, the user can either
+leave the system or try to find a bike in another station of the
+network.  If the station at the destination is full, the user must
+return the bike to another station with at least one parking spot
+available.
+
+Several issues arise in practice, the most important being the lack of
+resource: if no bikes are available at the origin or no parking spot
+are available at the destination, the mechanics described above forces
+users to adapt to shortage or blocking situations without notice prior
+to their arrival at the stations, leading to trip delays or
+cancellations.  Hence in practice, BSS companies often use trucks to
+dynamically reallocate bikes in the system and avoid problematic
+situation, in order to reach the quality and efficiency of service
+targeted by the cities.  Such policies turned out to be costly and
+unsuitable for specific issues and many challenges remain unanswered,
+particularly on how to design and manage these systems and increase
+their usage rate by giving the users more incentives to embrace them.
+
+Our goal is this work is to use a mathematical model to predict the
+possibilities for users to perform a trip. By using the measured
+occupancy of the stations and past user behavior, we want to answer
+questions like:
+\begin{itemize}
+\item \emph{``what is the probability that a trip from A to B is
+    possible at 6pm a regular Monday''}? 
+\item \emph{``how much detour should I plan if I want to go from A to
+    B in 30min?''}
+\item \emph{``If I want to arrive at the train station at 9am, when
+    should I leave home and where should I pick or park my bike?''}
+\end{itemize}
+
+\subsection{Literature review}
+
+The research related to such models is still in its early stages, but
+publication over the subject have increased recently.  Some of the
+work focuses on a social analysis of BSS and how such systems
+influence global transportation system in several cities across the
+world.  Data analysis is another important aspect of the research,
+since it allows us analyse customers' usage of the system and reaction
+to problematic situation, as well as trying to forecast their demands.
+Finally, the study of BSS have lead to new mathematical models and
+optimization techniques, either by by focusing on the design of the
+system itself or on bike allocation and movement through the system.
+Table~\ref{table:LitRev} summarizes some of the literature we are
+aware of.
+
+
+\begin{table}
+\centering
+\begin{tabular}{||c|c|c||}
+\hline
+\hline
+\multirow{3}{*}{Social studies of BSS} & History & \cite{DeMaio2009}\\ 
+\cline{2-3}
+&
+ Users' behavior & \begin{minipage}{0.4\textwidth}\cite{Froehlich2008}, \cite{Shaheen2010}\end{minipage}\\
+\cline{2-3}
+&
+ Case studies & \begin{minipage}{0.4\textwidth}\cite{Shaheen2007}, \cite{Shaheen2011}, \cite{Correia2014}\end{minipage}\\
+\hline
+\hline
+\multicolumn{2}{||c|}{Data analysis} &  \begin{minipage}{0.4\textwidth}\cite{Froehlich2008}, \cite{Borgnat2011}, \cite{Nair2013}, \cite{Frade2014}\end{minipage}\\
+\hline
+\hline
+\multicolumn{2}{||c|}{Mathematical modelization} & \begin{minipage}{0.4\textwidth}\cite{Shu2005}, \cite{Fricker2012}, \cite{Fricker2014}\end{minipage}\\ 
+\hline
+\hline
+\multirow{4}{*}{Optimization techniques} & System design &\begin{minipage}{0.4\textwidth}\cite{Campbell1992}, \cite{Katzev2003}, \cite{DeMaio2004}, \cite{Borndorfer2007}, \cite{Correia2012}\end{minipage}\\ 
+\cline{2-3}
+&
+ Fleet sizing and assignment & \begin{minipage}{0.4\textwidth}\cite{George2011}, \cite{Raviv2013a}, \cite{Shu2013}\end{minipage}\\
+\cline{2-3}
+&
+ Bikes repositioning & \begin{minipage}{0.4\textwidth}\cite{Kek2009}, \cite{Benchimol2011}, \cite{Chemla2012}, \cite{Contardo2012}, \cite{Raviv2013b}, \cite{Schuijbroeck2013}, \cite{Angeloudis2014}\end{minipage}\\
+\cline{2-3}
+&
+ Pricing techniques 
+& \begin{minipage}{0.4\textwidth}\cite{Waserhole2012}, \cite{Waserhole2013}\end{minipage}\\
+\hline
+\hline
+\end{tabular}
+\caption{Overview of some literature over VSS}
+\label{table:LitRev}
+\end{table}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "Draft_BSS_QUANTICOL"
+%%% End:
