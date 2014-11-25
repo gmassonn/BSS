@@ -1,0 +1,96 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[latin1]{inputenc}
+\usepackage[cm]{fullpage}
+\usepackage{mathrsfs,xcolor}
+\usepackage{mathtools}
+
+\usepackage{needspace}
+\usepackage{pgfpages}
+\usepackage{tikz}
+\usetikzlibrary{arrows,through,backgrounds,positioning,fit,petri,patterns}
+\usetikzlibrary{shapes,shadows}
+\usetikzlibrary{plotmarks,decorations,calendar,matrix,folding}
+\usetikzlibrary{calc}
+\usepackage{pgfplots}
+\usepackage{animate}
+%\usepackage{setspace}
+
+%\usepackage[usenames, dvipsnames]{color}
+\usepackage{multirow}
+\usepackage{shadow}
+\usepackage{caption}
+\usepackage{subcaption}
+%%% OPRE uses endnotes. If you do not use them, put a percent sign before
+%%% the \theendnotes command. This template does show how to use them.
+\usepackage{endnotes}
+\let\footnote=\endnote
+\let\enotesize=\normalsize
+\def\notesname{Endnotes}%
+\def\makeenmark{$^{\theenmark}$}
+\def\enoteformat{\rightskip0pt\leftskip0pt\parindent=1.75em
+  \leavevmode\llap{\theenmark.\enskip}}
+
+% Private macros here (check that there is no clash with the style)
+\newcommand{\dem}[2]{d^{#1}_{#2}}
+\newcommand{\B}{\{0,1\}}
+\newcommand{\OPT}{\mbox{OPT}}
+\newcommand{\cost}{\mathscr{C}}%{{\cal C}}
+\newcommand{\costh}{\widehat{\mathscr{C}}}%{{\cal C}}
+\newcommand{\piOPT}{\pi^{\mbox{\tiny{OPT}}}}
+\newcommand{\xOPT}{x^{\mbox{\tiny{OPT}}}}
+\newcommand{\XOPT}{X^{\mbox{\tiny{OPT}}}}
+
+\newenvironment{proof}{\paragraph{\sc Proof.}}{\hfill$\square$}
+%\newtheorem{lemma}{\paragraph{\sc Proof.}}{\hfill$\square$}
+
+% Natbib setup for author-year style
+\usepackage{natbib}
+ \bibpunct[, ]{(}{)}{,}{a}{}{,}%
+ \def\bibfont{\small}%
+ \def\bibsep{\smallskipamount}%
+ \def\bibhang{24pt}%
+ \def\newblock{\ }%
+ \def\BIBand{and}%
+
+%% Setup of theorem styles. Outcomment only one.
+%% Preferred default is the first option.
+%\TheoremsNumberedByChapter  % (Theorem 1.1, Lema 1.1, Theorem 1.2)
+
+%% Setup of the equation numbering system. Outcomment only one.
+%% Preferred default is the first option.
+%\EquationsNumberedBySection % (1.1), (1.2), \ldots
+
+% In the reviewing and copyediting stage enter the manuscript number.
+%\MANUSCRIPTNO{} % When the article is logged in and DOI assigned to it,
+                 %   this manuscript number is no longer necessary
+%\documentclass[twoside,leqno,twocolumn]{article}
+%\usepackage{ltexpprt}
+%\renewcommand{\arraystretch}{2}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Research project on Vehicule Sharing Systems: A road map}
+\author{Nicolas Gast, Guillaume Massonnet, Vincent Jost}
+
+
+\maketitle
+
+
+\abstract{This is a general road map giving an overview of the different directions considered for the project on Vehicule Sharing Systems (VSS).
+}
+
+%\keywords{vehicule sharing system, to be completed}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Introduction.tex}
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{plainnat}
+\bibliography{VSS}
+
+\end{document}
+
